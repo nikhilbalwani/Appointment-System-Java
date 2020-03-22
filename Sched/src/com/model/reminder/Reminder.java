@@ -39,7 +39,7 @@ public abstract class Reminder extends Timer {
         
         this.schedule(new TimerTask() {                                         // Schedule this task to reminder time
             public void run() {
-                new MailApplication("nikhilbalwani1998@gmail.com", "Cheshirecat1!", recipient, subject, body);
+                new MailApplication("nikhilbalwani1998@gmail.com", "<PWD>", recipient, subject, body);
             }
             
         }, reminderTime.getTime());
@@ -52,7 +52,7 @@ public abstract class Reminder extends Timer {
     }
     
     protected Reminder(String message, String recipient, String subject, String body) {
-        new MailApplication("nikhilbalwani1998@gmail.com", "Cheshirecat1!", recipient, subject, body);
+        new MailApplication("nikhilbalwani1998@gmail.com", "<PWD>", recipient, subject, body);
         completeReminder();
     }
 }
